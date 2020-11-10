@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<title>Projeto 10</title>
+	<title>Empresa Marketing</title>
 	<link rel="stylesheet" href="_css/style.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet"/>
 	<meta http-equiv="X-UA-Compatible" content="IE-Edge"/>
@@ -15,24 +15,24 @@
 	<header>
 		<div class="container">
 			<div class="menu-topo">
-				<div class="logo"><a href="#">Logomarca</a></div><!--logo-->
+				<div class="logo"><a href="#">Empresa MARKETING</a></div><!--logo-->
 				<div class="clear"></div><!--clear-->
 				<nav class="desktop">
 					<ul>
-						<li><a href="">Sobre</a></li>
-						<li><a href="">Serviços</a></li>
-						<li><a href="">Contato</a></li>
-						<li class="btn-nav">Quero um orçamento</li>
+						<li><a href="#sobre">Sobre</a></li>
+						<li><a href="#servicos">Serviços</a></li>
+						<li><a href="#contato">Contato</a></li>
+						<li class="btn-nav" ><a href="#orcamento">Quero um orçamento</a></li>
 					</ul>
 				</nav><!--desktop-->
 				<h3><i class="fas fa-bars"></i></h3>
 				<nav class="mobile">
 					<h3><i class="fas fa-bars"></i></h3>
 					<ul>
-						<li><a href="">Sobre</a></li>
-						<li><a href="">Serviços</a></li>
-						<li><a href="">Contato</a></li>
-						<li class="btn-nav">Quero um orçamento</li>
+						<li><a href="#sobre">Sobre</a></li>
+						<li><a href="#servicos">Serviços</a></li>
+						<li><a href="#contato">Contato</a></li>
+						<li class="btn-nav" ><a href="#orcamento">Quero um orçamento</a></li>
 					</ul>
 				</nav><!--mobile-->
 				<div class="clear"></div><!--clear-->
@@ -47,7 +47,7 @@
 			</div><!--chamada-header-->
 		</div><!--container-->
 	</header>
-	<section class="descricao-danki">
+	<section id="sobre" class="descricao-danki">
 		<div class="container">
 			<p>Com anos de experiência em desenvolvimento web e automação de marketing, a <b>Nossa Empresa</b> traz soluções que ajudam o seu time a vender mais tanto em segmentos B2C quanto B28.</p>
 		</div><!--container-->
@@ -70,7 +70,7 @@
 			</div><!--box-depoimento-->
 		</div><!--container-->
 	</section><!--descricao-danki3-->
-	<section class="servicos">
+	<section id="servicos" class="servicos">
 		<div class="container">
 			<div class="title-servicos">
 				<h3>Como podemos ajudar sua empresa<br ?/><i class="fas fa-angle-down"></i></h3>
@@ -146,8 +146,8 @@
 			</div><!--empresas-->
 		</div><!--container-->
 	</section><!--portfolio-->
-	<section class="formulario">
-		<div class="container">
+	<section id="orcamento" class="formulario">
+		<div id="contato" class="container">
 			<h2>Um orçamento ou alguma dúvida?</h2>
 			<form>
 				<input type="text" name="nome" placeholder="Nome..." required/>
@@ -185,6 +185,8 @@
 	</footer>
 	<script src="_js/jquery.js"></script>
 	<script src="_js/all.min.js"></script>
+	<script src="_js/menu_scroll.js"></script>
+	
 	<script>
 		$('nav.mobile h3').click(function(){
 			$('nav.mobile').find('ul').fadeToggle();

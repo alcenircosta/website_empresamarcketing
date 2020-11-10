@@ -252,7 +252,7 @@ section.servicos > .container{
 .box-servico-wraper p{
 	font-weight: lighter;
 	font-size: 16px;
-	color: #a7c92;
+	color: #a7c92a;
 	line-height: 1.6; 
 	margin:8px 0;
 }
@@ -335,6 +335,12 @@ section.formulario textarea{
 	margin-top: 8px;
 	padding: 12px ;
 }
+section.formulario input[type=text]:hover,
+section.formulario  input[type=email]:hover,
+section.formulario  input[type=submit]:hover,
+section.formulario  textarea:hover{
+border:2px solid #ff5f27;
+}
 section.formulario textarea:focus{
 	outline: none;
 }
@@ -402,6 +408,7 @@ footer{
 	background-color: white;
 	color: #31475e;
 }
+
 
 /**/
 /*Responsivo*/
